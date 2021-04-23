@@ -1,0 +1,12 @@
+{
+    "name": "brrng-interview",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+      "interview": "node app.js"
+    },
+    "author": "Muinde Geofrey",
+    "license": "ISC"
+  }
+  
