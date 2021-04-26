@@ -12,19 +12,28 @@ function generate(matrix){
  
     */
 
-    let depth = matrix.length;
+    let first_item = matrix[0];
     
     let result = [];
     
     matrix[0].forEach(item=>{
-        for(var i=1; i<depth; i++){
-         matrix[i].forEach(inner_item=>{
-           result.push(item + " " + inner_item)
-       })
-     }
+        matrix.forEach(inner_item=> {
+            if(inner_item != first_item) {
+                inner_item.forEach(value=> {
+                    result.push(item + " " + value)
+                })
+            }
+        })
     })
     
    return result;
+}
+
+
+function generateConcat(matrix) {
+    // Length of arrays (2).
+    // What are their lengths(2)
+    
 }
  
 
